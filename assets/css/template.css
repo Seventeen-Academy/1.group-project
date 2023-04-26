@@ -1,0 +1,107 @@
+/* Fonts */
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsBlack';
+    src: url('../fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsItalic';
+    src: url('../fonts/Poppins-Italic.ttf');
+}
+
+.poppins {
+    font-family: 'Poppins';
+}
+
+.poppins-bold {
+    font-family: 'PoppinsBold';
+}
+
+.poppins-black {
+    font-family: 'PoppinsBlack';
+}
+
+.poppins-light {
+    font-family: 'PoppinsLight';
+}
+
+.poppins-medium {
+    font-family: 'Poppins-Medium';
+}
+
+.poppins-italic {
+    font-family: 'PoppinsItalic';
+}
+
+/* Color */
+.bg-body {
+    background-color: #F5F5F5;
+}
+
+.bg-light {
+    background-color: #FFFFFF;
+}
+
+.bg-primary {
+    background-color: #1B0D44;
+}
+
+.bg-alternative {
+    background-color: #3E37A9;
+}
+
+.bg-secondary {
+    background-color: #DCCDF5;
+}
+
+.bg-danger {
+    background-color: #891010;
+}
+
+.bg-success {
+    background-color: #288914;
+}
+
+.color-alternative {
+    color: #3E37A9;
+}
+
+.color-dark {
+    color: #1E1E1E;
+}
+
+.color-sublight {
+    color: #CACACA;
+}
+
+.color-light {
+    color: #FFFFFF;
+}
+
+.color-subdark {
+    color: #121212;
+}
+
+.color-placeholder {
+    color: #B2B0B0;
+}

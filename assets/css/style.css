@@ -1,0 +1,38 @@
+body {
+    margin: 0px 60px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+    color: #3E37A9 !important;
+}
+
+.btn.btn-signin a {
+    text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+    background-color: #3E37A9;
+}
+
+/* Highlight */
+
+#btn-highlight {
+    padding: 12px 18px;
+}
+
+.highlight .title {
+    font-size: 48px;
+    font-family: 'PoppinsBold';
+}
+
+.highlight .paragraph {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.highlight .bg-scroll {
+    position: absolute;
+    left: 0px;
+    margin-top: 70px;
+}
