@@ -1,9 +1,36 @@
 /* Mobile Phone Small */
 @media (max-width: 576px) {
+    body {
+        padding: 0px 8px !important;
+    }
 
+    .bg-scroll {
+        display: none;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .learning .row {
+        padding: 1rem;
+    }
 }
+
+
+/* @media screen and (max-width: 1366px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vw;
+        background-color: #F5F5F5;
+    }
+} */
 
 /* Desktop Full HD Display */
-@media (max-width: 1920px) {
-
-}
+/* @media screen and (min-width: 1920px) {
+    body {
+        padding: 0px 120px;
+    }
+} */
