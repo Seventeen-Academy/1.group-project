@@ -107,7 +107,7 @@
 }
 
 .color-subdark {
-    color: rgba(18, 18, 18, 0.75)
+    color: rgb(18, 18, 18, 0.75);
 }
 
 .color-placeholder {

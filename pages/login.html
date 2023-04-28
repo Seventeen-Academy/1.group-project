@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seventeen Academy</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/template.css" />
+    <link rel="stylesheet" href="../assets/css/style-login.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <section class="login">
+      <div class="row">
+        <div class="col-sm-6 bg-login">
+          <img
+            src="../assets/images/bg-login-register.png"
+            draggable="false"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-6 form-login d-flex justify-content-center">
+          <div class="form-header mt-5 w-50">
+            <h1 class="welcome color-dark">Selamat Datang, Pahlawan!</h1>
+            <h4 class="paragraph color-subdark mt-3">
+              Petualangan baru telah menunggu untuk kamu jelajahi
+            </h4>
+            <form action="../index.html" class="form-content mt-5">
+              <label for="email">Email</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/mail.svg" alt="" />
+                </span>
+                <input
+                  type="text"
+                  name="email"
+                  class="form-control"
+                  placeholder="Masukkan Email"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <label for="email">Kata Sandi</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/lock.svg" alt="" />
+                </span>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Masukkan Password"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <a
+                href="#"
+                class="forgot-password d-flex justify-content-end color-alternative"
+                >Lupa kata sandi?</a
+              >
+              <button class="btn btn-login bgr-alternative color-light mt-3">
+                Masuk
+              </button>
+            </form>
+            <div class="row">
+              <div class="col mt-3 register d-flex justify-content-center">
+                <span class="register-label">Belum punya akun?</span>
+                <a href="#" class="register-link ms-2">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -15,6 +15,57 @@
     .learning .row {
         padding: 1rem;
     }
+
+    .report .container {
+        padding: 2rem;
+    }
+
+    .class .js-card {
+        padding: 1rem;
+    }
+
+    .class .css-card {
+        padding: 1rem;
+    }
+
+    .class .html-card {
+        padding: 1rem;
+    }
+
+    .class .lesson {
+        font-size: 10px;
+    }
+
+    footer .footer-list {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .report .right-twig {
+        display: none;
+    }
+    
+    .class .left-twig {
+        display: none;
+    }
+
+    .login .form-login {
+        background-image: none;
+    }
+
+    .login .form-header {
+        width: 100vw !important;
+        padding: 12px;
+    }
+
+    .register .form-register {
+        background-image: none;
+    }
+
+    .register .form-header {
+        width: 100vw !important;
+        padding: 12px;
+    }
 }
 
 
