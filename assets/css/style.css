@@ -16,6 +16,11 @@ body {
     text-decoration: none;
 }
 
+.btn.btn.btn-signup a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .btn.btn-signup:hover {
     background-color: #6e67cf;
     color: #FFFFFF;
@@ -25,6 +30,8 @@ body {
 
 #btn-highlight {
     padding: 12px 18px;
+    font-size: 16px;
+    font-family: 'PoppinsMedium';
 }
 
 #btn-highlight:hover {
@@ -117,6 +124,11 @@ body {
 .report .btn {
     border-radius: 12px;
     padding: 12px 18px;
+}
+
+.report .btn a {
+    text-decoration: none;
+    color: #1B0D44;
 }
 
 .report .tag {
@@ -221,8 +233,8 @@ body {
 }
 
 .class .btn-class:hover {
-        background-color: #6e67cf;
-        color: #FFFFFF;
+    background-color: #6e67cf;
+    color: #FFFFFF;
 }
 
 /* footer */

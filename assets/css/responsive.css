@@ -12,8 +12,36 @@
         display: none;
     }
 
+    .highlight .title {
+        font-size: 32px;
+    }
+
+    .highlight .paragraph {
+        font-size: 14px;
+    }
+
+    #btn-highlight {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
     .learning .row {
         padding: 1rem;
+    }
+
+    .learning .tag {
+        margin-top: 1rem;
+    }
+
+    .learning .paragraph {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'PoppinsMedium';
+    }
+
+    .learning .learning-grid .row {
+        display: flex;
+        justify-content: center;
     }
 
     .report .container {
@@ -33,13 +61,15 @@
     }
 
     .class .lesson {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     footer .footer-list {
         margin-top: 12px;
         margin-bottom: 12px;
     }
+
+    /* Register/Login page */
 
     .report .right-twig {
         display: none;
@@ -67,21 +97,3 @@
         padding: 12px;
     }
 }
-
-
-/* @media screen and (max-width: 1366px) {
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vw;
-        background-color: #F5F5F5;
-    }
-} */
-
-/* Desktop Full HD Display */
-/* @media screen and (min-width: 1920px) {
-    body {
-        padding: 0px 120px;
-    }
-} */
