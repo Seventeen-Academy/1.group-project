@@ -8,8 +8,8 @@
         display: none;
     }
 
-    .img-fluid {
-        display: none;
+    .highlight img {
+        margin-top: 2rem;
     }
 
     .highlight .title {
@@ -48,6 +48,10 @@
         padding: 2rem;
     }
 
+    .report img {
+        display: none;
+    }
+
     .class .js-card {
         padding: 1rem;
     }
@@ -79,6 +83,10 @@
         display: none;
     }
 
+    .login .bg-login img {
+        display: none;
+    }
+
     .login .form-login {
         background-image: none;
     }
@@ -95,5 +103,9 @@
     .register .form-header {
         width: 100vw !important;
         padding: 12px;
+    }
+
+    .register .bg-register img {
+        display: none;
     }
 }
