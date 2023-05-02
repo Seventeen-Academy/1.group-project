@@ -63,8 +63,7 @@ body {
 #ranting {
     position: absolute;
     left: 0;
-    bottom: -400px;
-    display: none;
+    bottom: -350px;
 }
 
 /* footer */
