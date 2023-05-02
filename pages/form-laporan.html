@@ -87,46 +87,62 @@
     <div class="container-fluid py-5 bg-dark">
       <div class="container">
         <h2 class="text-center mb-4 text-white">Sampaikan Laporanmu</h2>
-        <form id="myform">
+        <form id="needs-validation" novalidate>
           <div class="form-floating mb-3">
             <input
-              type="judul"
+              type="text"
               class="form-control"
               id="judul"
-              placeholder="Judul Laporan Anda"
+              placeholder="Masukkan Judul Laporan Anda"
+              required
             />
             <label for="judul">Judul Laporan Anda</label>
           </div>
-          <div class="form-floating mb-3">
+          <div class="valid-feedback"></div>
+          <div class="form-floating mb-3 ">
             <input
-              type="lokasi"
+              type="text"
               class="form-control"
               id="lokasi"
-              placeholder="Lokasi Kejadian Anda"
+              placeholder="Masukkan Lokasi Kejadian Anda"
+              required
             />
             <label for="lokasi">Lokasi Kejadian Anda</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 ">
             <input
-              type="tanggal"
+              type="date"
               class="form-control"
               id="tanggal"
-              placeholder="Tanggal Kejadian Anda"
+              placeholder="Masukkan Tanggal Kejadian Anda"
+              min=""
+              max=""
+              required
             />
             <label for="tanggal">Tanggal Kejadian Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
           </div>
           <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Leave a comment here" id="isi" style="height: 200px"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="isi" style="height: 200px" required></textarea>
             <label for="isi">Ketik Isi Laporan Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
           </div>
           <div class="mb-3">
-            <input class="form-control" type="file"  id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
+            <input class="form-control" type="file" id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
             <span class="text-white">*Isi bila perlu</span>
           </div>
           <div class="d-grid gap-2">
             <button class="btn btn-primary" type="submit">Lapor</button>
           </div>
         </form>
+        
     </div>
     <footer>
       <div class="container mt-5 pt-5 pb-2">
@@ -191,10 +207,8 @@
         </div>
       </div>
     </footer>
-
-
-    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
     <script src="../assets/js/script-laporan.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -1,33 +1,20 @@
-const form = document.getElementById("myform");
-const judulInput = document.getElementById("judul");
-const lokasiInput = document.getElementById("lokasi");
-const tanggalInput = document.getElementById("tanggal");
-const isiInput = document.getElementById("isi");
+(function () {
+  "use strict";
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  var form = document.querySelectorAll(".needs-validation");
 
-  if (judulInput.value.trim() === "") {
-    alert("Judul field is required!");
-    return;
-  }
+  Array.prototype.slice.call(form).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
 
-  if (lokasiInput.value.trim() === "") {
-    alert("Lokasi field is required!");
-    return;
-  }
-
-  if (tanggalInput.value.trim() === "") {
-    alert("Tanggal field is required!");
-    return;
-  }
-
-  if (isiInput.value.trim() === "") {
-    alert("Isi field is required!");
-    return;
-  }
-  // Jika semua field sudah diisi, tampilkan data yang diisi
-  alert(
-    `Judul: ${judulInput.value}\nLokasi: ${lokasiInput.value}\nTanggal: ${tanggalInput.value}\nIsi: ${isiInput.value}`
-  );
-});
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
