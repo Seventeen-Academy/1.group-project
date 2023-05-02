@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seventeen Academy</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/template.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="section-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://i.ibb.co/Qn7fNyZ/Logo.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav poppins-medium">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Beranda
+                  </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Kelas</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Artikel</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Tentang Kami</a>
+                </li>
+              </ul>
+              <div
+                class="btn-wrapper mx-auto d-flex align-items-center poppins-medium me-2"
+              >
+                <div class="btn btn-signin">
+                  <a href="pages/login.html" class="color-dark">Sign In</a>
+                </div>
+                <div class="btn-wrapper">
+                  <button
+                    class="btn btn-signup bgr-alternative color-light rounded"
+                  >
+                    <a href="pages/register.html"> Sign Up</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="container-fluid py-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center mb-4 text-white">Sampaikan Laporanmu</h2>
+        <form>
+          <div class="form-floating mb-3">
+            <input
+              type="judul"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Judul Laporan Anda"
+            />
+            <label for="floatingInput">Judul Laporan Anda</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="lokasi"
+              class="form-control"
+              id="floatinglokasi"
+              placeholder="Lokasi Kejadian Anda"
+            />
+            <label for="floatinglokasi">Lokasi Kejadian Anda</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="tanggal"
+              class="form-control"
+              id="floatingtanggal"
+              placeholder="Tanggal Kejadian Anda"
+            />
+            <label for="floatingtanggal">Tanggal Kejadian Anda</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+            <label for="floatingTextarea2">Ketik Isi Laporan Anda</label>
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="file"  id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
+          </div>
+        </form>
+    </div>
+
+    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
