@@ -15,6 +15,12 @@
       rel="stylesheet"
       href="../assets/plugins/bootstrap/css/bootstrap.min.css"
     />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/css/laporan.css"/>
     <link rel="stylesheet" href="../assets/css/template.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
@@ -116,10 +122,19 @@
           <div class="mb-3">
             <input class="form-control" type="file"  id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
           </div>
+          <div class="input-group date" id="datepicker">
+            <input type="text" class="form-control" id="date"/>
+            <span class="input-group-append">
+              <span class="input-group-text bg-light d-block">
+                <i class="fa fa-calendar"></i>
+              </span>
+            </span>
+          </div>
         </form>
     </div>
 
     <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../assets/js/script-laporan.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
