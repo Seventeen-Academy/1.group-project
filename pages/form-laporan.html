@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav poppins-medium">
                 <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="#">
+                  <a class="nav-link active" aria-current="page" href="../index.html">
                     Beranda
                   </a>
                 </li>
@@ -87,50 +87,128 @@
     <div class="container-fluid py-5 bg-dark">
       <div class="container">
         <h2 class="text-center mb-4 text-white">Sampaikan Laporanmu</h2>
-        <form>
+        <form id="needs-validation" novalidate>
           <div class="form-floating mb-3">
             <input
-              type="judul"
+              type="text"
               class="form-control"
-              id="floatingInput"
-              placeholder="Judul Laporan Anda"
+              id="judul"
+              placeholder="Masukkan Judul Laporan Anda"
+              required
             />
-            <label for="floatingInput">Judul Laporan Anda</label>
+            <label for="judul">Judul Laporan Anda</label>
           </div>
-          <div class="form-floating mb-3">
+          <div class="valid-feedback"></div>
+          <div class="form-floating mb-3 ">
             <input
-              type="lokasi"
+              type="text"
               class="form-control"
-              id="floatinglokasi"
-              placeholder="Lokasi Kejadian Anda"
+              id="lokasi"
+              placeholder="Masukkan Lokasi Kejadian Anda"
+              required
             />
-            <label for="floatinglokasi">Lokasi Kejadian Anda</label>
+            <label for="lokasi">Lokasi Kejadian Anda</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 ">
             <input
-              type="tanggal"
+              type="date"
               class="form-control"
-              id="floatingtanggal"
-              placeholder="Tanggal Kejadian Anda"
+              id="tanggal"
+              placeholder="Masukkan Tanggal Kejadian Anda"
+              min=""
+              max=""
+              required
             />
-            <label for="floatingtanggal">Tanggal Kejadian Anda</label>
+            <label for="tanggal">Tanggal Kejadian Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
           </div>
           <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-            <label for="floatingTextarea2">Ketik Isi Laporan Anda</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="isi" style="height: 200px" required></textarea>
+            <label for="isi">Ketik Isi Laporan Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
           </div>
           <div class="mb-3">
-            <input class="form-control" type="file"  id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
+            <input class="form-control" type="file" id="floatingfile" placeholder="Lampirkan Bukti Jika Ada">
             <span class="text-white">*Isi bila perlu</span>
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Lapor</button>
+            <button class="btn btn-primary" type="submit">Lapor</button>
           </div>
         </form>
+        
     </div>
-
-    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <footer>
+      <div class="container mt-5 pt-5 pb-2">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="../assets/icons/logo-white.svg" />
+            <h4 class="tag mt-3">
+              Website interaktif, <br />
+              Belajar lebih menyenangkan
+            </h4>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Layanan Kami</strong>
+            <ul>
+              <li>Tentanng Kami</li>
+              <li>Privacy & Policy</li>
+              <li>Kontak Kami</li>
+            </ul>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Product Kami</strong>
+            <ul>
+              <li>Kelas Online</li>
+              <li><a href="#">Artikel</a></li>
+              <li>Permainan</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 footer-list">
+            <strong>Sosial Media</strong>
+            <ul>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/github.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/instagram.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/youtube.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <span class="copyright"
+              >Copyright © 2023 SEVA ALL RIGHT RESERVED</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../assets/js/script-laporan.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
