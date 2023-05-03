@@ -83,6 +83,7 @@ body {
    
 #breadcrumb ol li a {
     padding: 0px 8px;
+    align-items: center;
   }
 /* content */
 
