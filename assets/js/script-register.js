@@ -29,3 +29,34 @@ function password_show_hide_2() {
       hide_eye.style.display = "none";
     }
 }
+
+function handleGetFormData() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('password-2').value;
+
+  return {
+    name:name,
+    email: email,
+    password: password,
+    confirmPassword: confirmPassword
+  };
+}
+
+function validateForm(formData) {
+  if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword){
+    return false;
+  }
+  return true;
+}
+
+// function submit() {
+//   const warning = document.getElementById("warning");
+//   if (!validateForm(handleGetFormData())) {
+// 
+//   }
+// }
+
+
+

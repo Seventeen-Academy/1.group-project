@@ -26,6 +26,20 @@ body {
     color: #FFFFFF;
 }
 
+.btn-wrapper-none {
+    display: none !important;
+}
+
+.btn-wrapper-2 .btn-profile a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn.btn-profile:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
 /* Highlight */
 
 #btn-highlight {

@@ -33,11 +33,12 @@
         </div>
         <div class="col-sm-6 form-login d-flex justify-content-center">
           <div class="form-header mt-5 w-50">
+            <div id="message" class="color-dark"></div>
             <h1 class="welcome color-dark">Selamat Datang, Pahlawan!</h1>
             <h4 class="paragraph color-subdark mt-3">
               Petualangan baru telah menunggu untuk kamu jelajahi
             </h4>
-            <form action="../index.html" class="form-content mt-5">
+            <form class="form-content mt-5" id="formLogin">
               <label for="email">Email</label>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
@@ -48,9 +49,10 @@
                   name="email"
                   class="form-control"
                   placeholder="Masukkan Email"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
+                  id="email"
+                  required
                 />
+                <div class="invalid-feedback">Mohon masukkan email anda</div>
               </div>
               <label for="email">Kata Sandi</label>
               <div class="input-group mb-3">
@@ -62,16 +64,20 @@
                   name="password"
                   class="form-control"
                   placeholder="Masukkan Password"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
+                  id="password"
+                  required
                 />
+                <div class="invalid-feedback">Mohon masukkan password anda</div>
               </div>
               <a
                 href="#"
                 class="forgot-password d-flex justify-content-end color-alternative"
                 >Lupa kata sandi?</a
               >
-              <button class="btn btn-login bgr-alternative color-light mt-3">
+              <button
+                type="submit"
+                class="btn btn-login bgr-alternative color-light mt-3"
+              >
                 Masuk
               </button>
             </form>
@@ -88,4 +94,7 @@
       </div>
     </section>
   </body>
+
+  <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+  <script src="../assets/js/script.js"></script>
 </html>

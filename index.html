@@ -62,17 +62,32 @@
               </ul>
               <div
                 class="btn-wrapper mx-auto d-flex align-items-center poppins-medium me-2"
+                id="btnLogin"
               >
                 <div class="btn btn-signin">
                   <a href="pages/login.html" class="color-dark">Sign In</a>
                 </div>
-                <div class="btn-wrapper">
-                  <button
-                    class="btn btn-signup bgr-alternative color-light rounded"
-                  >
-                    <a href="pages/register.html"> Sign Up</a>
-                  </button>
-                </div>
+                <button
+                  class="btn btn-signup bgr-alternative color-light rounded"
+                >
+                  <a href="pages/register.html"> Sign Up</a>
+                </button>
+              </div>
+              <div
+                class="btn-wrapper-2 btn-wrapper-none mx-auto d-flex align-items-center poppins-medium me-2"
+                id="btnUser"
+              >
+                <button
+                  class="btn btn-profile bgr-alternative color-light rounded"
+                  id="btn-profile"
+                >
+                  <img
+                    src="https://loremflickr.com/640/480/people"
+                    class="img-fluid me-2"
+                    width="30"
+                  />
+                  <a href="#">asdasdsa</a>
+                </button>
               </div>
             </div>
           </div>
@@ -525,7 +540,29 @@
       </div>
     </footer>
 
+    <script>
+      const btnUser = document.getElementById("btnUser");
+      const btnLogin = document.getElementById("btnLogin");
+
+      let users = JSON.parse(localStorage.getItem("session"));
+      if (users) {
+        btnUser.classList.remove("btn-wrapper-none");
+        btnLogin.classList.add("btn-wrapper-none");
+
+        document.querySelector("#btnUser button a").text = users.name;
+        // document.querySelector("#btnUser button a").href =
+        //   "pages/register.html";
+        document.querySelector("#btnUser button img").src = users.img;
+      }
+
+      btnUser.addEventListener("click", function () {
+        localStorage.removeItem("session");
+        window.location.reload();
+        // window.location.href = "../index.html"
+      });
+    </script>
+
     <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
   </body>
 </html>
