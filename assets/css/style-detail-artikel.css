@@ -80,7 +80,10 @@ body {
   .kategori #kategori-filters li:last-child {
     margin-right: 0;
   }
-  
+   
+#breadcrumb ol li a {
+    padding: 0px 8px;
+  }
 /* content */
 
 .content h2 {
@@ -95,7 +98,7 @@ body {
 #ranting {
     position: absolute;
     left: 0;
-    bottom: -300px;
+    margin-top: -160px;
 }
 
 /* footer */
