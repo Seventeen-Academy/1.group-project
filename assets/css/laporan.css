@@ -7,7 +7,31 @@ body {
   overflow-x: hidden;
 }
 
-/* Footer */
+main {
+  margin-bottom: 100px;
+  padding: 0 80px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+  color: #3e37a9 !important;
+}
+
+.btn.btn-signin a {
+  text-decoration: none;
+}
+
+.btn.btn.btn-signup a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+  background-color: #6e67cf;
+  color: #ffffff;
+}
+
+/* footer */
 footer {
   background-color: #1b0d44;
   font-family: "Poppins";
@@ -32,30 +56,10 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #faf8f9;
+  color: #c2a2eb;
 }
 
 footer .copyright {
   font-size: 14px;
   color: rgb(255, 248, 249, 0.5);
-}
-
-/* Background */
-.highlight .bg-scroll {
-  position: absolute;
-  left: 0px;
-  margin-top: 70px;
-}
-
-.report .right-twig {
-  position: absolute;
-  right: 0;
-  width: 200px;
-  margin-top: -120px;
-}
-
-.class .left-twig {
-  position: absolute;
-  left: 0;
-  margin-top: -180px;
 }
