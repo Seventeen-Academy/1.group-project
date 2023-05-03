@@ -49,6 +49,38 @@ body {
     font-family: 'PoppinsMedium';
 }
 
+.kategori {
+    margin: 60px 60px 0px 0px;
+    padding-bottom: 0px;
+  }
+  .kategori #kategori-filters {
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+  }
+  .kategori #kategori-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 8px 16px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    font-family: "PoppinsMedium";
+  }
+  
+  .kategori #kategori-filters li:hover,
+  .kategori #kategori-filters li.filter-active {
+    color: #fff;
+    background: #3e37a9;
+  }
+  
+  .kategori #kategori-filters li:last-child {
+    margin-right: 0;
+  }
+  
 /* content */
 
 .content h2 {
