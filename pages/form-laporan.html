@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seventeen Academy</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/css/laporan.css" />
+    <link rel="stylesheet" href="../assets/css/template.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="section-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://i.ibb.co/Qn7fNyZ/Logo.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav poppins-medium">
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="/index.html">Beranda</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Kelas</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Artikel</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Tentang Kami</a>
+                </li>
+              </ul>
+              <div
+                class="btn-wrapper mx-auto d-flex align-items-center poppins-medium me-2"
+              >
+                <div class="btn btn-signin">
+                  <a href="/pages/login.html" class="color-dark">Sign In</a>
+                </div>
+                <div class="btn-wrapper">
+                  <button
+                    class="btn btn-signup bgr-alternative color-light rounded"
+                  >
+                    <a href="/pages/register.html"> Sign Up</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container-fluid bgr-alternative">
+      <div class="container">
+        <h2 class="text-center pt-5 mb-4 text-white">Sampaikan Laporanmu</h2>
+        <form id="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="judul"
+              placeholder="Masukkan Judul Laporan Anda"
+              autocomplete="off"
+              required
+            />
+            <label for="judul">Judul Laporan Anda</label>
+          </div>
+          <div class="valid-feedback"></div>
+          <div class="form-floating mb-3 ">
+            <input
+              type="text"
+              class="form-control"
+              id="lokasi"
+              placeholder="Masukkan Lokasi Kejadian Anda"
+              autocomplete="off"
+              required
+            />
+            <label for="lokasi">Lokasi Kejadian Anda</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="form-floating mb-3 ">
+            <input
+              type="date"
+              class="form-control"
+              id="tanggal"
+              placeholder="Masukkan Tanggal Kejadian Anda"
+              min=""
+              max=""
+              autocomplete="off"
+              required
+            />
+            <label for="tanggal">Tanggal Kejadian Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="isi" style="height: 200px" required></textarea>
+            <label for="isi">Tuliskan Isi Laporan Anda</label>
+            <div class="invalid-feedback">
+              Mohon isi kolom ini.
+            </div>
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="floatingfile" placeholder="Lampirkan Bukti Jika Ada" required>
+            <span class="text-white">*Isi bila perlu</span>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-primary" type="submit">Lapor</button>
+          </div>
+        </form>
+    </div>
+
+    <footer>
+      <div class="container mt-5 pt-5 pb-2">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="../assets/icons/logo-white.svg" />
+            <h4 class="tag mt-3">
+              Website interaktif, <br />
+              Belajar lebih menyenangkan
+            </h4>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Layanan Kami</strong>
+            <ul>
+              <li>Tentanng Kami</li>
+              <li>Privacy & Policy</li>
+              <li>Kontak Kami</li>
+            </ul>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Product Kami</strong>
+            <ul>
+              <li>Kelas Online</li>
+              <li><a href="#">Artikel</a></li>
+              <li>Permainan</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 footer-list">
+            <strong>Sosial Media</strong>
+            <ul>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/github.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/instagram.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="../assets/icons/youtube.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <span class="copyright"
+              >Copyright © 2023 SEVA ALL RIGHT RESERVED</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/script-laporan.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

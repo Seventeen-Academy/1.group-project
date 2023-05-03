@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+    color: #3E37A9 !important;
+}
+
+.btn.btn-signin a {
+    text-decoration: none;
+}
+
+.btn.btn.btn-signup a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
+/* Highlight */
+
+#btn-highlight {
+    padding: 12px 18px;
+    font-size: 16px;
+    font-family: 'PoppinsMedium';
+}
+
+#btn-highlight:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
+.highlight .title {
+    font-size: 48px;
+    font-family: 'PoppinsBold';
+}
+
+.highlight .paragraph {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.kategori {
+    margin: 60px 60px 0px 0px;
+    padding-bottom: 0px;
+  }
+  .kategori #kategori-filters {
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+  }
+  .kategori #kategori-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 8px 16px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    font-family: "PoppinsMedium";
+  }
+  
+  .kategori #kategori-filters li:hover,
+  .kategori #kategori-filters li.filter-active {
+    color: #fff;
+    background: #3e37a9;
+  }
+  
+  .kategori #kategori-filters li:last-child {
+    margin-right: 0;
+  }
+   
+#breadcrumb ol li a {
+    padding: 0px 8px;
+    align-items: center;
+  }
+/* content */
+
+.content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+#ranting {
+    position: absolute;
+    left: 0;
+    margin-top: -160px;
+}
+
+/* footer */
+footer {
+    background-color: #1B0D44;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #FAF8F9;
+}
+
+footer .tag {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.8)
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: -32px;
+    margin-top: 16px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FAF8F9;
+}
+
+footer ul li a:hover {
+    color: #FAF8F9;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.5);
+}
+
+/* Background */
+.highlight .bg-scroll {
+    position: absolute;
+    left: 0px;
+    margin-top: 70px;
+}
+
+.report .right-twig {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    margin-top: -120px;
+}
+
+.class .left-twig {
+    position: absolute;
+    left: 0;
+    margin-top: -180px;
+}

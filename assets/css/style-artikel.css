@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 100px;
+  padding: 0 80px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+  color: #3e37a9 !important;
+}
+
+.btn.btn-signin a {
+  text-decoration: none;
+}
+
+.btn.btn.btn-signup a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+  background-color: #6e67cf;
+  color: #ffffff;
+}
+
+/* Artikel */
+
+.kategori {
+  margin: 60px 60px 0px 0px;
+  padding-bottom: 0px;
+}
+.kategori #kategori-filters {
+  margin: 0px;
+  list-style: none;
+  text-align: center;
+}
+.kategori #kategori-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #444444;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  font-family: "PoppinsMedium";
+}
+
+.kategori #kategori-filters li:hover,
+.kategori #kategori-filters li.filter-active {
+  color: #fff;
+  background: #3e37a9;
+}
+
+.kategori #kategori-filters li:last-child {
+  margin-right: 0;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(99, 99, 99, 0.2);
+  overflow: hidden;
+  height: 440px;
+  margin-top: 20px;
+}
+
+.card-body .row {
+  margin-bottom: 20px;
+}
+
+.card-body .sub-title {
+  font-size: 12px;
+  line-height: normal;
+  font-family: "PoppinsLight";
+}
+
+.badge {
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+
+.date {
+  font-size: 12px;
+  font-family: "PoppinsMedium";
+  color: #b8b8b8;
+}
+
+.title-2 {
+  font-size: 18px;
+  font-family: "PoppinsBold";
+}
+
+.title-2 .view {
+  text-decoration: none;
+}
+
+.title-2 .view:hover {
+  color: #3e37a9;
+  font-weight: 600;
+}
+
+.page {
+  margin: 60px;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  background-color: #1b0d44;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #faf8f9;
+}
+
+footer .tag {
+  font-size: 14px;
+  color: rgb(255, 248, 249, 0.8);
+}
+
+footer ul li {
+  list-style: none;
+  margin-left: -32px;
+  margin-top: 16px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #faf8f9;
+}
+
+footer ul li a:hover {
+  color: #faf8f9;
+}
+
+footer .copyright {
+  font-size: 14px;
+  color: rgb(255, 248, 249, 0.5);
+}
+
+.kategori-container .right-twig {
+  position: absolute;
+  right: 0;
+  width: 160px;
+  margin-top: -140px;
+}
+
+.left-twig {
+  position: absolute;
+  left: 0;
+  margin-top: -160px;
+}
