@@ -8,7 +8,6 @@ submit.addEventListener('submit', function(e){
         .then(response => response.json())
         .then(users => {
         console.log(users);
-        // Mengambil input dari pengguna
 
         if (users.length > 0) {
             const value = JSON.stringify(users[0])
