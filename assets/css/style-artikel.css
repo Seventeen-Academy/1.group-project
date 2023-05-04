@@ -29,7 +29,7 @@ body {
 /* Artikel */
 
 .kategori {
-  margin: 60px 60px 0px 0px;
+  margin: 60px 40px 0px 0px;
   padding-bottom: 0px;
 }
 
@@ -60,10 +60,6 @@ body {
 
 .kategori #kategori-filters li:last-child {
   margin-right: 0;
-}
-
-.artikel {
-  margin-bottom: 60px;
 }
 
 .card {
@@ -109,7 +105,7 @@ body {
   font-family: "PoppinsLight";
 }
 
-.page {
+.artikel .page-navigation {
   margin-top: 60px;
   margin-bottom: 100px;
   align-items: center;
@@ -148,11 +144,11 @@ footer .copyright {
   color: rgb(255, 248, 249, 0.5);
 }
 
-.artikel .right-twig {
+.right-twig {
   position: absolute;
   right: 0;
   width: 160px;
-  margin-top: -140px;
+  margin-top: -120px;
 }
 
 .left-twig {
@@ -161,17 +157,17 @@ footer .copyright {
   margin-top: -200px;
 }
 
-/* Mobile Phone Small */
+/* Responsive Mobile Phone Small */
 @media (max-width: 576px) {
-  body {
-    padding: 0px 8px !important;
-  }
-
-  .artikel .right-twig {
+  .right-twig {
     display: none;
   }
 
   .left-twig {
     display: none;
+  }
+
+  .artikel .page-navigation {
+    font-size: 18px;
   }
 }
