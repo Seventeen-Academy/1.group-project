@@ -160,3 +160,18 @@ footer .copyright {
   left: 0;
   margin-top: -200px;
 }
+
+/* Mobile Phone Small */
+@media (max-width: 576px) {
+  body {
+    padding: 0px 8px !important;
+  }
+
+  .artikel .right-twig {
+    display: none;
+  }
+
+  .left-twig {
+    display: none;
+  }
+}
