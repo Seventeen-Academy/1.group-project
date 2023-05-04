@@ -7,11 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  margin-bottom: 100px;
-  padding: 0 80px;
-}
-
 /* Navbar */
 .navbar-nav .nav-link.active {
   color: #3e37a9 !important;
@@ -65,6 +60,11 @@ main {
   margin-right: 0;
 }
 
+.artikel-card {
+  padding: 0px 60px;
+  margin-bottom: 60px;
+}
+
 .card {
   margin: 10px;
   background-color: #fff;
@@ -113,7 +113,8 @@ main {
 }
 
 .page {
-  margin: 60px;
+  margin-top: 60px;
+  margin-bottom: 100px;
   align-items: center;
 }
 
@@ -150,7 +151,7 @@ footer .copyright {
   color: rgb(255, 248, 249, 0.5);
 }
 
-.kategori-container .right-twig {
+.artikel-card .right-twig {
   position: absolute;
   right: 0;
   width: 160px;
@@ -160,5 +161,5 @@ footer .copyright {
 .left-twig {
   position: absolute;
   left: 0;
-  margin-top: -160px;
+  margin-top: -200px;
 }
