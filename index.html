@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="assets/plugins/bootstrap/css/bootstrap.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/template.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -300,10 +304,9 @@
                   <button
                     class="btn bgr-warning color-primary mt-2"
                     id="btn-report"
+                    onclick="checkLoginButton()"
                   >
-                    <a href="../pages/form-laporan.html">
-                      Sampaikan Laporanmu
-                    </a>
+                    Sampaikan Laporanmu
                   </button>
                 </div>
                 <div class="col-md-1"></div>
@@ -544,7 +547,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-global.js"></script>
+    <script src="assets/js/script-headers.js"></script>
   </body>
 </html>

@@ -1,4 +1,6 @@
 let submit = document.getElementById('formLogin')
+const getSession = localStorage.getItem("session");
+console.log(getSession);
 
 submit.addEventListener('submit', function(e){
     e.preventDefault();
@@ -11,6 +13,7 @@ submit.addEventListener('submit', function(e){
         if (users.length > 0 && users[0].password == password) {
             const value = JSON.stringify(users[0])
             localStorage.setItem('session', value);
+            localStorage.setItem('status', true)
             window.location.href = "../index.html"
             
         } else {
@@ -24,3 +27,18 @@ submit.addEventListener('submit', function(e){
         });
 })
 
+function password_show_hide() {
+    var x = document.getElementById("password");
+    var show_eye = document.getElementById("show_eye");
+    var hide_eye = document.getElementById("hide_eye");
+    hide_eye.classList.remove("d-none");
+    if (x.type === "password") {
+      x.type = "text";
+      show_eye.style.display = "none";
+      hide_eye.style.display = "block";
+    } else {
+      x.type = "password";
+      show_eye.style.display = "block";
+      hide_eye.style.display = "none";
+    }
+  }

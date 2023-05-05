@@ -108,4 +108,9 @@
     .register .bg-register img {
         display: none;
     }
+
+    /* Laporan */
+    .report-content {
+        width: 100vw !important;
+    }
 }
