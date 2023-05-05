@@ -1,5 +1,3 @@
-console.log(users);
-
 const submit = document.getElementById('formReport');
 
 submit.addEventListener('submit', function(e) {
