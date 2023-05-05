@@ -31,6 +31,16 @@ main {
   color: #ffffff;
 }
 
+/* form */
+.btn-report {
+  padding: 12px 24px;
+  width: 100%;
+}
+.btn-report:hover {
+  background-color: #6e67cf;
+  color: #ffffff;
+}
+
 /* footer */
 footer {
   background-color: #1b0d44;
