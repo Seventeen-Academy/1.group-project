@@ -27,6 +27,9 @@ body {
 }
 
 /* Artikel */
+a {
+  text-decoration: none;
+}
 
 .kategori {
   margin: 60px 40px 0px 0px;
