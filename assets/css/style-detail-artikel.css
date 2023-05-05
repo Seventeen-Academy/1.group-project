@@ -37,10 +37,20 @@ body {
     font-size: 14px;
     text-align: justify;
 }
+
 #ranting {
     position: absolute;
     left: 0;
-    margin-top: -160px;
+    margin-top: -120px;
+    display: none;
+}
+
+#daun {
+    position: absolute;
+    left: 0;
+    margin-top: 300px;
+    align-items: right;
+    display: none;
 }
 
 /* footer */
