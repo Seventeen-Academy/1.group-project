@@ -17,6 +17,10 @@
       href="../assets/plugins/bootstrap/css/bootstrap.min.css"
     />
     <link
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+    rel="stylesheet"
+    />
+    <link
       href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
       rel="stylesheet"
       type="text/css"
@@ -38,11 +42,12 @@
         </div>
         <div class="col-sm-6 form-register d-flex justify-content-center">
           <div class="form-header mt-5 w-50">
+            <div class="warning"></div>
             <h1 class="welcome color-dark">Daftar Untuk Jadi Pahlawan !</h1>
             <h4 class="paragraph color-subdark mt-3">
               Daftarkan dirimu untuk berpetualang dan menjadi seorang pahlawan
             </h4>
-            <form action="../index.html" class="form-content mt-3">
+            <form class="form-content mt-3" id="formRegister">
               <label for="name">Nama</label>
               <div class="input-group mb-2">
                 <span class="input-group-text" id="basic-addon1">
@@ -53,8 +58,8 @@
                   name="name"
                   class="form-control"
                   placeholder="Masukkan Nama Lengkap"
-                  aria-label="Name"
-                  aria-describedby="basic-addon1"
+                  id="name"
+                  required
                 />
               </div>
 
@@ -68,8 +73,8 @@
                   name="email"
                   class="form-control"
                   placeholder="Masukkan Email"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
+                  id="email"
+                  required
                 />
               </div>
 
@@ -84,6 +89,7 @@
                   id="password"
                   class="form-control"
                   placeholder="Masukkan Password"
+                  required
                 />
                 <div class="input-group-append">
                   <span
@@ -108,6 +114,7 @@
                   id="password-2"
                   class="form-control"
                   placeholder="Masukkan Password"
+                  required
                 />
                 <div class="input-group-append">
                   <span
@@ -120,7 +127,9 @@
                   </span>
                 </div>
               </div>
-              <button class="btn btn-register bgr-alternative color-light mt-2">
+              <button 
+              type="submit"
+              class="btn btn-register bgr-alternative color-light mt-2">
                 Daftar
               </button>
             </form>
@@ -134,7 +143,9 @@
       </div>
     </section>
 
-    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="../assets/js/script-register.js"></script>
   </body>
 </html>

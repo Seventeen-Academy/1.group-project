@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Seventeen Academy</title>
+    <title>Login | Seventeen Academy</title>
     <link
       rel="shortcut icon"
       href="../assets/icons/logo.png"
@@ -15,6 +15,15 @@
     <link
       rel="stylesheet"
       href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
     />
     <link rel="stylesheet" href="../assets/css/template.css" />
     <link rel="stylesheet" href="../assets/css/style-login.css" />
@@ -33,11 +42,12 @@
         </div>
         <div class="col-sm-6 form-login d-flex justify-content-center">
           <div class="form-header mt-5 w-50">
+            <div id="message" class="color-dark"></div>
             <h1 class="welcome color-dark">Selamat Datang, Pahlawan!</h1>
             <h4 class="paragraph color-subdark mt-3">
               Petualangan baru telah menunggu untuk kamu jelajahi
             </h4>
-            <form action="../index.html" class="form-content mt-5">
+            <form class="form-content mt-5" id="formLogin">
               <label for="email">Email</label>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
@@ -48,9 +58,10 @@
                   name="email"
                   class="form-control"
                   placeholder="Masukkan Email"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
+                  id="email"
+                  required
                 />
+                <div class="invalid-feedback">Mohon masukkan email anda</div>
               </div>
               <label for="email">Kata Sandi</label>
               <div class="input-group mb-3">
@@ -62,16 +73,30 @@
                   name="password"
                   class="form-control"
                   placeholder="Masukkan Password"
-                  aria-label="Email"
-                  aria-describedby="basic-addon1"
+                  id="password"
+                  required
                 />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text p-3"
+                    onclick="password_show_hide();"
+                    id="basic-addon1"
+                  >
+                    <i class="fa fa-eye" id="show_eye"></i>
+                    <i class="fa fa-eye-slash d-none" id="hide_eye"></i>
+                  </span>
+                </div>
+                <div class="invalid-feedback">Mohon masukkan password anda</div>
               </div>
               <a
                 href="#"
                 class="forgot-password d-flex justify-content-end color-alternative"
                 >Lupa kata sandi?</a
               >
-              <button class="btn btn-login bgr-alternative color-light mt-3">
+              <button
+                type="submit"
+                class="btn btn-login bgr-alternative color-light mt-3"
+              >
                 Masuk
               </button>
             </form>
@@ -88,4 +113,8 @@
       </div>
     </section>
   </body>
+
+  <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/script-login.js"></script>
 </html>

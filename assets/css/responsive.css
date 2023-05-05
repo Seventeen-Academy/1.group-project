@@ -108,4 +108,15 @@
     .register .bg-register img {
         display: none;
     }
-}
+    
+    #ranting {
+        display: none;
+    }
+
+    #daun {
+        display: none;
+    }
+
+    .detail-content {
+        width: 100vw !important;
+    }
