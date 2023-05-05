@@ -84,67 +84,65 @@
       </header>
     </div>
 
-    <div class="bgr-alternative">
-      <div class="container">
-        <h2 class="text-center pt-5 mb-4 text-white">Sampaikan Laporanmu</h2>
-        <form id="needs-validation" novalidate>
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="judul"
-              placeholder="Masukkan Judul Laporan Anda"
-              autocomplete="off"
-              required
-            />
-            <label for="judul">Judul Laporan Anda</label>
-          </div>
-          <div class="valid-feedback"></div>
-          <div class="form-floating mb-3 ">
-            <input
-              type="text"
-              class="form-control"
-              id="lokasi"
-              placeholder="Masukkan Lokasi Kejadian Anda"
-              autocomplete="off"
-              required
-            />
-            <label for="lokasi">Lokasi Kejadian Anda</label>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="form-floating mb-3 ">
-            <input
-              type="date"
-              class="form-control"
-              id="tanggal"
-              placeholder="Masukkan Tanggal Kejadian Anda"
-              min=""
-              max=""
-              autocomplete="off"
-              required
-            />
-            <label for="tanggal">Tanggal Kejadian Anda</label>
-            <div class="invalid-feedback">
-              Mohon isi kolom ini.
-            </div>
-          </div>
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Leave a comment here" id="isi" style="height: 200px" required></textarea>
-            <label for="isi">Tuliskan Isi Laporan Anda</label>
-            <div class="invalid-feedback">
-              Mohon isi kolom ini.
-            </div>
-          </div>
-          <div class="mb-3">
-            <input class="form-control" type="file" id="floatingfile" placeholder="Lampirkan Bukti Jika Ada" required>
-            <span class="text-white">*Isi bila perlu</span>
-          </div>
-          <div class="d-grid">
-            <button class="btn btn-primary" type="submit">Lapor</button>
-          </div>
-        </form>
+    <div class="container report-content bgr-light rounded shadow-sm p-3 mt-5 w-50">
+      <h4 class="text-center my-4 bgr-primary p-3 rounded text-white poppins-medium">
+        Sampaikan Laporanmu
+      </h2>
+      <form class="form-content" id="formReport">
+        <div class="mb-3">
+          <label for="judul">Judul Laporan Anda</label>
+          <input
+            type="text"
+            class="form-control"
+            name="judul"
+            id="judul"
+            placeholder="Masukkan Judul Laporan Anda"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="lokasi">Lokasi Kejadian Anda</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lokasi"
+            id="lokasi"
+            placeholder="Masukkan Lokasi Kejadian Anda"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="lokasi">Tanggal Kejadian Anda</label>
+          <input
+            type="date"
+            class="form-control"
+            name="tanggal"
+            id="tanggal"
+            placeholder="Masukkan Tanggal Kejadian"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="isi">Tuliskan Isi Laporan Anda</label>
+          <textarea
+            name="isi"
+            class="form-control"
+            id="isi"
+            cols="30"
+            rows="10"
+            autocomplete="off"
+          ></textarea>
+        </div>
+        <button
+          class="btn btn-report bgr-alternative text-white poppins-medium"
+          type="submit"
+        >
+          Lapor
+        </button>
+      </form>
     </div>
 
     <footer>
