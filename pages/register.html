@@ -43,7 +43,7 @@
             <h4 class="paragraph color-subdark mt-3">
               Daftarkan dirimu untuk berpetualang dan menjadi seorang pahlawan
             </h4>
-            <form action="../index.html" class="form-content mt-3">
+            <form class="form-content mt-3" id="formRegister">
               <label for="name">Nama</label>
               <div class="input-group mb-2">
                 <span class="input-group-text" id="basic-addon1">
@@ -55,6 +55,7 @@
                   class="form-control"
                   placeholder="Masukkan Nama Lengkap"
                   id="name"
+                  required
                 />
               </div>
 
@@ -69,6 +70,7 @@
                   class="form-control"
                   placeholder="Masukkan Email"
                   id="email"
+                  required
                 />
               </div>
 
@@ -83,6 +85,7 @@
                   id="password"
                   class="form-control"
                   placeholder="Masukkan Password"
+                  required
                 />
                 <div class="input-group-append">
                   <span
@@ -107,6 +110,7 @@
                   id="password-2"
                   class="form-control"
                   placeholder="Masukkan Password"
+                  required
                 />
                 <div class="input-group-append">
                   <span
@@ -119,7 +123,9 @@
                   </span>
                 </div>
               </div>
-              <button class="btn btn-register bgr-alternative color-light mt-2">
+              <button 
+              type="submit"
+              class="btn btn-register bgr-alternative color-light mt-2">
                 Daftar
               </button>
             </form>
@@ -134,6 +140,8 @@
     </section>
 
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <script src="../assets/js/script-register.js"></script>
   </body>
 </html>
