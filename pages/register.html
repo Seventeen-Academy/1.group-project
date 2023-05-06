@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seventeen Academy</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+    rel="stylesheet"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../assets/css/template.css" />
+    <link rel="stylesheet" href="../assets/css/style-register.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <section class="register">
+      <div class="row">
+        <div class="col-sm-6 bg-register">
+          <img
+            src="../assets/images/bg-login-register.png"
+            draggable="false"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-6 form-register d-flex justify-content-center">
+          <div class="form-header mt-5 w-50">
+            <div class="warning"></div>
+            <h1 class="welcome color-dark">Daftar Untuk Jadi Pahlawan !</h1>
+            <h4 class="paragraph color-subdark mt-3">
+              Daftarkan dirimu untuk berpetualang dan menjadi seorang pahlawan
+            </h4>
+            <form class="form-content mt-3" id="formRegister">
+              <label for="name">Nama</label>
+              <div class="input-group mb-2">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/person.svg" alt="" />
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Masukkan Nama Lengkap"
+                  id="name"
+                  required
+                />
+              </div>
+
+              <label for="email">Email</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/mail.svg" alt="" />
+                </span>
+                <input
+                  type="text"
+                  name="email"
+                  class="form-control"
+                  placeholder="Masukkan Email"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <label for="password-1">Kata Sandi</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/lock.svg" alt="" />
+                </span>
+                <input
+                  type="password"
+                  name="password-1"
+                  id="password"
+                  class="form-control"
+                  placeholder="Masukkan Password"
+                  required
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text p-3"
+                    onclick="password_show_hide_1();"
+                    id="basic-addon1"
+                  >
+                    <i class="fa fa-eye" id="show_eye"></i>
+                    <i class="fa fa-eye-slash d-none" id="hide_eye"></i>
+                  </span>
+                </div>
+              </div>
+
+              <label for="password-2">Konfirmasi Kata Sandi</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="../assets/icons/lock.svg" alt="" />
+                </span>
+                <input
+                  type="password"
+                  name="password-2"
+                  id="password-2"
+                  class="form-control"
+                  placeholder="Masukkan Password"
+                  required
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text p-3"
+                    onclick="password_show_hide_2();"
+                    id="basic-addon1"
+                  >
+                    <i class="fa fa-eye" id="show_eye_2"></i>
+                    <i class="fa fa-eye-slash d-none" id="hide_eye_2"></i>
+                  </span>
+                </div>
+              </div>
+              <button 
+              type="submit"
+              class="btn btn-register bgr-alternative color-light mt-2">
+                Daftar
+              </button>
+            </form>
+            <div class="row">
+              <div class="col mt-3 register d-flex justify-content-center">
+                <span class="register-label">Sudah punya akun?</span>
+                <a href="../pages/login.html" class="register-link ms-2">Masuk Sekarang</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    
+    <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <script src="../assets/js/script-register.js"></script>
+  </body>
+</html>

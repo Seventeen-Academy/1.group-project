@@ -8,108 +8,548 @@
     <title>Seventeen Academy</title>
     <link
       rel="shortcut icon"
-      href="/assets/icons/logo.png"
+      href="assets/icons/logo.png"
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/template.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
-    <header class="section-header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="https://i.ibb.co/Qn7fNyZ/Logo.png"
-              alt="Logo"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav poppins-medium">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Beranda
-                </a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link color-dark" href="#">Kelas</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link color-dark" href="#">Artikel</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link color-dark" href="#">Tentang Kami</a>
-              </li>
-            </ul>
-            <div class="btn-wrapper poppins-medium me-2">
-              <div class="btn btn-signin">
-                <a href="#" class="color-dark">Sign In</a>
+    <div class="container">
+      <header class="section-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://i.ibb.co/Qn7fNyZ/Logo.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav poppins-medium">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Beranda
+                  </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Kelas</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="/pages/artikel.html"
+                    >Artikel</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link color-dark" href="#">Tentang Kami</a>
+                </li>
+              </ul>
+              <div
+                class="btn-wrapper mx-auto d-flex align-items-center poppins-medium me-2"
+                id="btnLogin"
+              >
+                <div class="btn btn-signin">
+                  <a href="pages/login.html" class="color-dark">Sign In</a>
+                </div>
+                <button
+                  class="btn btn-signup bgr-alternative color-light rounded"
+                >
+                  <a href="pages/register.html"> Sign Up</a>
+                </button>
               </div>
-              <div class="btn btn-signup">
-                <button class="btn bg-alternative color-light rounded">
-                  Sign Up
+              <div
+                class="btn-wrapper-2 btn-wrapper-none mx-auto d-flex align-items-center poppins-medium me-2"
+                id="btnUser"
+              >
+                <button
+                  class="btn btn-profile bgr-alternative color-light rounded"
+                  id="btn-profile"
+                >
+                  <img
+                    src="https://loremflickr.com/640/480/people"
+                    class="img-fluid me-2"
+                    width="30"
+                  />
+                  <a href="#">asdasdsa</a>
                 </button>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
 
     <main class="content">
-      <section class="highlight mt-3">
-        <div class="continer">
-          <div class="row">
-            <div class="col-md-5 col my-auto">
-              <h1 class="title color-dark ms-3">
-                Mari Belajar <br />
-                dengan SevA
-              </h1>
-              <p class="paragraph color-dark my-3 ms-3">
-                Menghadirkan pembelajaran yang <br />
-                menyenangkan dengan dikemas tema game RPG
-              </p>
-              <button
-                class="btn bg-alternative color-light my-2 ms-3"
-                id="btn-highlight"
-              >
-                Mulai Belajar
-              </button>
-              <img
-                src="https://i.ibb.co/Sv11b49/scroll.png"
-                alt=""
-                class="bg-scroll"
-              />
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6 col">
-              <img
-                src="https://i.ibb.co/KXYhdV6/Hero-Invitation.png"
-                alt="Gambar Petualang"
-                class="img-fluid"
-              />
+      <div class="container">
+        <section class="highlight mt-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col my-auto">
+                <h1 class="title color-dark ms-3">Mari Belajar dengan SevA</h1>
+                <p class="paragraph color-dark my-3 ms-3">
+                  Menghadirkan pembelajaran yang menyenangkan dengan dikemas
+                  tema game RPG.
+                </p>
+                <button
+                  class="btn bgr-alternative color-light my-2 ms-3"
+                  id="btn-highlight"
+                >
+                  Mulai Belajar
+                </button>
+                <img
+                  src="https://i.ibb.co/Sv11b49/scroll.png"
+                  class="bg-scroll"
+                />
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6 col">
+                <img
+                  src="https://i.ibb.co/KXYhdV6/Hero-Invitation.png"
+                  alt="Gambar Petualang"
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section class="learning mt-3">
+          <div class="container bgr-primary p-md-5 color-light">
+            <div class="row">
+              <div class="col-md-5 my-auto">
+                <h2 class="tag color-sublight">P E M B E L A J A R A N</h2>
+                <h2 class="title my-3">Pembelajaran Menarik</h2>
+                <p class="paragraph color-sublight">
+                  Menghadirkan mata pelajaran dasar yang penting untuk anak
+                  dengan dikemas menarik agar tidak merasa bosan
+                </p>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6 learning-grid">
+                <div class="row">
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-matematika.png" />
+                    <p class="mt-2">Matematika</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-ipa.png" />
+                    <p class="mt-2">IPA</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-ips.png" />
+                    <p class="mt-2">IPS</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-agama.png" />
+                    <p class="mt-2">Agama</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 d-flex justify-content-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/shield-badge-master.png" />
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-ppkn.png" />
+                    <p class="mt-2">PPKN</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-indonesia.png" />
+                    <p class="mt-2">B. Indonesia</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-senbud.png" />
+                    <p class="mt-2">Seni Budaya</p>
+                  </div>
+                  <div
+                    class="col-md-3 col-10 card d-flex text-center align-items-center p-2 m-2"
+                  >
+                    <img src="assets/images/buku-inggris.png" />
+                    <p class="mt-2">B. Inggris</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefit">
+          <div class="container mt-5">
+            <div class="row">
+              <h4 class="tag color-dark text-center">M A N F A A T</h4>
+              <h4 class="title color-dark text-center">
+                Apa yang akan kamu dapatkan?
+              </h4>
+              <div class="row">
+                <div class="col-md-3 my-2">
+                  <div class="card mt-4 shadow-sm p-2">
+                    <img
+                      src="https://i.ibb.co/kK6SCDS/Sword-Terjangkau.png"
+                      class="m-2 img-fluid"
+                      width="76"
+                    />
+                    <div class="card-body">
+                      <h5 class="title color-dark">Terjangkau</h5>
+                      <p class="paragraph color-subdark">
+                        Memberikan akses kelas dengan biaya terjangkau
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 shadow-sm p-2">
+                    <img
+                      src="https://i.ibb.co/ZM0w5Ft/Sword-Penghargaan.png"
+                      class="m-2 img-fluid"
+                      width="76"
+                    />
+                    <div class="card-body">
+                      <h5 class="title color-dark">Penghargaan</h5>
+                      <p class="paragraph color-subdark">
+                        Dapatkan penghargaan berupa sertifikat dan point
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 my-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="https://i.ibb.co/xGZHpGx/Hero-Benefit.png"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3 my-2">
+                  <div class="card mt-4 shadow-sm p-2">
+                    <img
+                      src="https://i.ibb.co/JpDjVqX/Sword-Interaktif.png"
+                      class="m-2 img-fluid"
+                      width="76"
+                    />
+                    <div class="card-body">
+                      <h5 class="title color-dark">Interaktif</h5>
+                      <p class="paragraph color-subdark">
+                        Pembelajaran interaktif dengan tema game RPG
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 shadow-sm p-2">
+                    <img
+                      src="https://i.ibb.co/pncKs2J/Sword-Perlindungan.png"
+                      class="m-2 img-fluid"
+                      width="76"
+                    />
+                    <div class="card-body">
+                      <h5 class="title color-dark">Perlindungan</h5>
+                      <p class="paragraph color-subdark">
+                        Membantu kamu dari perundungan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="report mt-5">
+          <div class="row">
+            <img src="assets/images/right-twig.png" alt="" class="right-twig" />
+            <h4 class="tag color-dark text-center">Laporan</h4>
+            <h4 class="title color-dark text-center">
+              Perlindungan terhadap Perundungan
+            </h4>
+            <div class="container bgr-primary mt-4" id="report-card">
+              <div class="row">
+                <div class="col-md-6 p-md-5 my-auto">
+                  <h4 class="title-2 color-light">
+                    Kami ada disini untuk kamu
+                  </h4>
+                  <p class="paragraph color-sublight">
+                    Sampaikan laporan perundunganmu disini, kami siap membantu
+                  </p>
+                  <button
+                    class="btn bgr-warning color-primary mt-2"
+                    id="btn-report"
+                    onclick="checkLoginButton()"
+                  >
+                    Sampaikan Laporanmu
+                  </button>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 d-flex justify-content-end">
+                  <img src="assets/images/report-chara.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="class mt-5">
+          <div class="row">
+            <h4 class="tag color-dark text-center">Kelas</h4>
+            <h4 class="title color-dark text-center">Kelas Yang Populer</h4>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                  <div class="card-wrapper">
+                    <div
+                      class="card css-card border-card shadow-sm d-flex justify-content-center align-items-center p-md-5"
+                    >
+                      <img
+                        src="assets/images/css-card.png"
+                        alt=""
+                        width="140"
+                      />
+                    </div>
+                    <div class="card-body p-2 shadow-sm bgr-light px-2">
+                      <h4 class="title-1 mx-2 color-dark">CSS Dasar</h4>
+                      <div class="badge d-flex align-items-center">
+                        <img src="assets/icons/badge-junior.png" alt="" />
+                        <h4 class="badge-text color-dark ms-1 my-auto">
+                          Junior
+                        </h4>
+                      </div>
+                      <h4 class="paragraph mx-2 color-dark my-3">
+                        CSS, bahasa yang digunakan untuk mengatur tampilan
+                        elemen yang tertulis dalam bahasa markup.
+                      </h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <div
+                            class="container bgr-secondary lesson-wrapper d-flex ms-2"
+                          >
+                            <img src="assets/icons/book.svg" />
+                            <h4 class="lesson p-2 my-auto">7 Pembelajaran</h4>
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <h4
+                            class="price-class-card color-alternative me-2 my-auto"
+                          >
+                            Gratis
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="card-footer px-2 bgr-light mb-2">
+                        <hr />
+                        <button
+                          class="btn bgr-alternative btn-class color-light"
+                        >
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card-wrapper">
+                    <div
+                      class="card html-card border-card shadow-sm d-flex justify-content-center align-items-center p-md-5"
+                    >
+                      <img
+                        src="assets/images/html-card.png"
+                        alt=""
+                        width="140"
+                      />
+                    </div>
+                    <div class="card-body p-2 shadow-sm bgr-light px-2">
+                      <h4 class="title-1 mx-2 color-dark">HTML Dasar</h4>
+                      <div class="badge d-flex align-items-center">
+                        <img src="assets/icons/badge-junior.png" alt="" />
+                        <h4 class="badge-text color-dark ms-1 my-auto">
+                          Junior
+                        </h4>
+                      </div>
+                      <h4 class="paragraph mx-2 color-dark my-3">
+                        HTML adalah bahasa pemrograman web yang bertujuan untuk
+                        membuat kerangka pada suatu website
+                      </h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <div
+                            class="container bgr-secondary lesson-wrapper d-flex ms-2"
+                          >
+                            <img src="assets/icons/book.svg" />
+                            <h4 class="lesson p-2 my-auto">5 Pembelajaran</h4>
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <h4
+                            class="price-class-card color-alternative me-2 my-auto"
+                          >
+                            Gratis
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="card-footer px-2 bgr-light mb-2">
+                        <hr />
+                        <button
+                          class="btn bgr-alternative btn-class color-light"
+                        >
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card-wrapper">
+                    <div
+                      class="card js-card border-card shadow-sm d-flex justify-content-center align-items-center p-md-5"
+                    >
+                      <img src="assets/images/js-card.png" alt="" width="140" />
+                    </div>
+                    <div class="card-body p-2 shadow-sm bgr-light px-2">
+                      <h4 class="title-1 mx-2 color-dark">JavaScript Dasar</h4>
+                      <div class="badge d-flex align-items-center">
+                        <img src="assets/icons/badge-junior.png" alt="" />
+                        <h4 class="badge-text color-dark ms-1 my-auto">
+                          Junior
+                        </h4>
+                      </div>
+                      <h4 class="paragraph mx-2 color-dark my-3">
+                        JavaScript, bahasa pemrograman yang digunakan untuk
+                        membuat halaman yang interaktif
+                      </h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <div
+                            class="container bgr-secondary lesson-wrapper d-flex ms-1"
+                          >
+                            <img src="assets/icons/book.svg" />
+                            <h4 class="lesson p-2 my-auto">14 Pembelajaran</h4>
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <h4
+                            class="price-class-card color-alternative me-2 my-auto"
+                          >
+                            Gratis
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="card-footer px-2 bgr-light mb-2">
+                        <hr />
+                        <button
+                          class="btn bgr-alternative btn-class color-light"
+                        >
+                          Selengkapnya
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/left-twig.png" alt="" class="left-twig" />
+        </section>
+      </div>
     </main>
 
+    <footer>
+      <div class="container mt-5 pt-5 pb-2">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="assets/icons/logo-white.svg" />
+            <h4 class="tag mt-3">
+              Website interaktif, <br />
+              Belajar lebih menyenangkan
+            </h4>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Layanan Kami</strong>
+            <ul>
+              <li>Tentanng Kami</li>
+              <li>Privacy & Policy</li>
+              <li>Kontak Kami</li>
+            </ul>
+          </div>
+          <div class="col-md-2 col footer-list">
+            <strong>Product Kami</strong>
+            <ul>
+              <li>Kelas Online</li>
+              <li><a href="#">Artikel</a></li>
+              <li>Permainan</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-6 footer-list">
+            <strong>Sosial Media</strong>
+            <ul>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="assets/icons/github.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="assets/icons/instagram.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="social-media-wrapper">
+                    <img src="assets/icons/youtube.svg" />
+                    <span class="ms-2">Seventeen Academy</span>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <span class="copyright"
+              >Copyright © 2023 SEVA ALL RIGHT RESERVED</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-global.js"></script>
+    <script src="assets/js/script-headers.js"></script>
   </body>
 </html>

@@ -1,5 +1,10 @@
 body {
-    margin: 0px 60px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -11,14 +16,41 @@ body {
     text-decoration: none;
 }
 
+.btn.btn.btn-signup a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .btn.btn-signup:hover {
-    background-color: #3E37A9;
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
+.btn-wrapper-none {
+    display: none !important;
+}
+
+.btn-wrapper-2 .btn-profile a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn.btn-profile:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
 }
 
 /* Highlight */
 
 #btn-highlight {
     padding: 12px 18px;
+    font-size: 16px;
+    font-family: 'PoppinsMedium';
+}
+
+#btn-highlight:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
 }
 
 .highlight .title {
@@ -31,8 +63,243 @@ body {
     font-family: 'PoppinsMedium';
 }
 
+/* Learning */
+
+.learning .container {
+    background-image: url('../images/bg-learning.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    max-width: 100vw;
+}
+
+.learning .tag {
+    font-size: 16px;
+    font-family: 'PoppinsMedium';
+}
+
+.learning .title {
+    font-size: 32px;
+    font-family: 'PoppinsBold';
+    line-height: 48px;
+}
+
+.learning .paragraph {
+    font-size: 18px;
+    font-family: 'PoppinsRegular';
+}
+
+.learning .card {
+    background-color: #331D76;
+    color: #F5F5F5;
+    font-family: 'PoppinsRegular';
+    font-size: 14px;
+}
+
+/* Benefit */
+
+.benefit .container {
+    max-width: 100vw;
+}
+
+.benefit .tag {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.benefit .title {
+    font-size: 32px;
+    font-family: 'PoppinsBold';
+}
+
+.benefit .card {
+    border-radius: 20px;
+}
+
+.card-body .title {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.card-body .paragraph {
+    font-size: 16px;
+    font-family: 'PoppinsRegular';
+}
+
+/* Report */
+#report-card {
+    background-image: url(../images/bg-report.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    width: 100vw;
+    border-radius: 20px;
+}
+
+.report .btn {
+    border-radius: 12px;
+    padding: 12px 18px;
+}
+
+.report .btn a {
+    text-decoration: none;
+    color: #1B0D44;
+}
+
+.report .tag {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.report .title {
+    font-size: 32px;
+    font-family: 'PoppinsBold';
+}
+
+.report .paragraph {
+    font-size: 18px;
+    font-family: 'PoppinsRegular';
+}
+
+.report .title-2 {
+    font-size: 28px;
+    font-family: 'PoppinsMedium';
+}
+
+.report #btn-report:hover {
+    background-color: #f5ca7a;
+}
+
+.report #btn-report {
+    font: 16px;
+    font-family: 'PoppinsMedium';
+}
+
+/* Class */
+.class .tag {
+    font-size: 18px;
+    font-family: 'PoppinsMedium';
+}
+
+.class .title {
+    font-size: 32px;
+    font-family: 'PoppinsBold';
+}
+
+.class .title-1 {
+    font-size: 24px;
+    font-family: 'PoppinsMedium';
+}
+
+
+.class .paragraph {
+    font-size: 16px;
+    font-family: 'PoppinsLight';
+}
+
+.class .css-card {
+    background-color: #3D9EC8;
+}
+
+.class .border-card {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.class .html-card {
+    background-color: #F16F37;
+}
+
+.class .js-card {
+    background-color: #F1DF4B;
+}
+
+.class .card-body {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.class .badge-text {
+    font-size: 16px;
+    font-family: 'PoppinsRegular';
+}
+
+.class .lesson {
+    font-size: 12px;
+    font-family: 'PoppinsLight';
+}
+
+.class .price-class-card {
+    font-size: 14px;
+    font-family: 'PoppinsBold';
+}
+
+.class .lesson-wrapper {
+    border-radius: 8px;
+}
+
+.class .btn-class {
+    padding: 12px 18px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'PoppinsMedium';
+}
+
+.class .btn-class:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
+/* footer */
+footer {
+    background-color: #1B0D44;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #FAF8F9;
+}
+
+footer .tag {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.8)
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: -32px;
+    margin-top: 16px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FAF8F9;
+}
+
+footer ul li a:hover {
+    color: #FAF8F9;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.5);
+}
+
+/* Background */
 .highlight .bg-scroll {
     position: absolute;
     left: 0px;
     margin-top: 70px;
+}
+
+.report .right-twig {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    margin-top: -120px;
+}
+
+.class .left-twig {
+    position: absolute;
+    left: 0;
+    margin-top: -180px;
 }

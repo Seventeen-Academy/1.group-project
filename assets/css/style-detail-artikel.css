@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+    color: #3E37A9 !important;
+}
+
+.btn.btn-signin a {
+    text-decoration: none;
+}
+
+.btn.btn.btn-signup a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+    background-color: #6e67cf;
+    color: #FFFFFF;
+}
+
+/* content */
+
+.content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#daun {
+    position: absolute;
+    right: 0;
+}
+
+#ranting {
+    position: absolute;
+    left: 0;
+    margin-top: -15%;
+}
+
+/* footer */
+footer {
+    background-color: #1B0D44;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #FAF8F9;
+}
+
+footer .tag {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.8)
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: -32px;
+    margin-top: 16px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FAF8F9;
+}
+
+footer ul li a:hover {
+    color: #FAF8F9;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: rgb(255, 248, 249, 0.5);
+}
+
+/* Background */
+.highlight .bg-scroll {
+    position: absolute;
+    left: 0px;
+    margin-top: 70px;
+}
+
+
+.class .left-twig {
+    position: absolute;
+    left: 0;
+    margin-top: -180px;
+}

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 100px;
+  padding: 0 80px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link.active {
+  color: #3e37a9 !important;
+}
+
+.btn.btn-signin a {
+  text-decoration: none;
+}
+
+.btn.btn.btn-signup a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn.btn-signup:hover {
+  background-color: #6e67cf;
+  color: #ffffff;
+}
+
+/* form */
+.btn-report {
+  padding: 12px 24px;
+  width: 100%;
+}
+.btn-report:hover {
+  background-color: #6e67cf;
+  color: #ffffff;
+}
+
+/* footer */
+footer {
+  background-color: #1b0d44;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #faf8f9;
+}
+
+footer .tag {
+  font-size: 14px;
+  color: rgb(255, 248, 249, 0.8);
+}
+
+footer ul li {
+  list-style: none;
+  margin-left: -32px;
+  margin-top: 16px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #faf8f9;
+}
+
+footer ul li a:hover {
+  color: #c2a2eb;
+}
+
+footer .copyright {
+  font-size: 14px;
+  color: rgb(255, 248, 249, 0.5);
+}
